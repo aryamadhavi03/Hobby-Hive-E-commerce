@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background: #fed9de;
+}
+
+.login-container::before,
+.login-container::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('/Clip\ path\ group.png') no-repeat;
+  background-size: contain;
+}
+
+.login-container::before {
+  top: 0;
+  left: 0;
+}
+
+.login-container::after {
+  bottom: 0;
+  right: 0;
+}
+
+/* Additional metallic balls */
+.metallic-ball {
+  position: absolute;
+  background: url('/metallicball.png') no-repeat;
+  background-size: contain;
+}
+
+.metallic-ball.small {
+  width: 30px;
+  height: 30px;
+}
+
+.metallic-ball.medium {
+  width: 100px;
+  height: 100px;
+}
+
+.metallic-ball.large {
+  width: 200px;
+  height: 200px;
+}
+
+/* Positioning metallic balls */
+.metallic-ball1 {
+  top: 10%;
+  left: 20%;
+}
+
+.metallic-ball2 {
+  top: 30%;
+  left: 70%;
+}
+
+.metallic-ball3 {
+  top: 50%;
+  left: 40%;
+}
+
+.metallic-ball4 {
+  top: 70%;
+  left: 60%;
+}
+
+.metallic-ball5 {
+  top: 85%;
+  left: 30%;
+}
+
+.image-container {
+  margin-left: 40px;
+}
+
+.image-container img {
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+  z-index: 1;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.captcha {
+  margin-bottom: 10px;
+}
+
+.form-container button {
+  padding: 10px;
+  background: #dc092c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.google-login {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+/* src/Onlinestore.css */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .buttons .btn {
+    width: 48%;
+    color:white;
+    background-color: rgb(232, 104, 183);
+    margin: 1vw;
+  }
+  

@@ -1,0 +1,143 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9eae9;
+    position: relative;
+  }
+  
+  .signup-container::before,
+  .signup-container::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('/Clip\ path\ group.png') no-repeat;
+    background-size: contain;
+  }
+  
+  .signup-container::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .signup-container::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Additional metallic balls */
+  .metallic-ball {
+    position: absolute;
+    background: url('/metallicball.png') no-repeat;
+    background-size: contain;
+  }
+  
+  .metallic-ball.small {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .metallic-ball.medium {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .metallic-ball.large {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Positioning metallic balls */
+  .metallic-ball1 {
+    top: 15%;
+    left: 15%;
+  }
+  
+  .metallic-ball2 {
+    top: 25%;
+    left: 85%;
+  }
+  
+  .metallic-ball3 {
+    top: 45%;
+    left: 30%;
+  }
+  
+  .metallic-ball4 {
+    top: 75%;
+    left: 55%;
+  }
+  
+  .metallic-ball5 {
+    top: 80%;
+    left: 25%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-container {
+    background: rgba(250, 243, 243, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    padding: 10px;
+    background: #ff4766;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .captcha {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .google-login {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container {
+    margin-left: 70px;
+  }
+  
+  .image-container img {
+    max-width: 479px;
+    border-radius: 8px;
+  }
+  

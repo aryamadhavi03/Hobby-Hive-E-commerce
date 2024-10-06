@@ -1,0 +1,131 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #333;
+}
+
+/* Navbar Logo */
+.navbar-logo img {
+  height: 50px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+/* Links */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px; /* Maintains padding without changing font size */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Login and Signup Button */
+.login-btn,
+.signup-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #555;
+  color: white;
+}
+
+.signup-btn {
+  background-color: #007bff;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Hover Effect */
+.login-btn:hover,
+.signup-btn:hover,
+.navbar-links a:hover {
+  background-color: #444;
+}
+
+/* Active Link Styling */
+.navbar-links .active {
+  color:  rgb(253, 92, 213);
+  font-weight: bold;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}
+
+/* Pop-out Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Positions the dropdown just below the button */
+  right: 0;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999; /* Ensures dropdown appears on top of other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+/* Dropdown Links */
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ensures last link doesn't have extra margin */
+.dropdown-menu a:last-child {
+  margin-bottom: 0;
+}
+
+/* Red Background for testing */
+.red {
+  background: rgb(253, 92, 213);
+  color:  rgb(253, 92, 213);
+}
+.navbar-links a:hover {
+  background-color: #ff6b9a; /* Soft pink hover effect */
+  color: white; /* Ensures visibility on hover */
+}
+/* Active Link Styling */
+.navbar-links a.active {
+  color: #ff4d88; /* Pink color for active links */
+  font-weight: bold; /* Bold active link */
+}
