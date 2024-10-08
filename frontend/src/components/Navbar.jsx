@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
 import "./Navbar.css";
 
 const Navbar = ({ handleLogout }) => {
@@ -14,25 +13,43 @@ const Navbar = ({ handleLogout }) => {
     }
   }, []);
 
-  
-
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown); // Toggle dropdown visibility
   };
 
   return (
     <nav className="navbar">
-       <div className="navbar-logo">
-      <NavLink to="/home">
-        <img src="/logo.svg" alt="Logo" />
-      </NavLink>
-    </div>
+      <div className="navbar-logo">
+        <NavLink to="/home">
+          <img src="/images/logo.png" alt="Logo" />
+        </NavLink>
+      </div>
       <ul className="navbar-links">
-        <li><NavLink exact to="/home" activeclassname="active">HOME</NavLink></li>
-        <li><NavLink to="/services" activeclassname="active">SERVICES</NavLink></li>
-        <li><NavLink to="/appointment" activeclassname="active">APPOINTMENT</NavLink></li>
-        <li><NavLink to="/store" activeclassname="active">STORE</NavLink></li>
-        <li><NavLink to="/outlets" activeclassname="active">OUTLETS</NavLink></li>
+        <li>
+          <NavLink exact to="/home" activeclassname="active">
+            <img src="/images/home.svg" alt="Home" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/cutomersupport" activeclassname="active">
+            <img src="/images/customer.svg" alt="Services" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/shop" activeclassname="active">
+            <img src="/images/cart.svg" alt="Appointment" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/communitypage" activeclassname="active">
+            <img src="/images/mega.svg" alt="Store" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/location" activeclassname="active">
+            <img src="/images/location.svg" alt="Outlets" />
+          </NavLink>
+        </li>
 
         {/* Conditionally render dropdown for logged-in user */}
         {loggedInUser ? (
@@ -42,9 +59,7 @@ const Navbar = ({ handleLogout }) => {
             </button>
             {showDropdown && (
               <div className="dropdown-menu">
-                <NavLink to="#" activeclassname="active">Profile</NavLink>
-                <NavLink to="/myappointments" activeclassname="active">My Appointments</NavLink>
-                <NavLink to="#" activeclassname="active" onClick={handleLogout} >Logout</NavLink>
+                <NavLink to="#" activeclassname="active" onClick={handleLogout}>Logout</NavLink>
               </div>
             )}
           </li>

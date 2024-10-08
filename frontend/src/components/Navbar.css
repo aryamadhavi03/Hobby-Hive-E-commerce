@@ -4,7 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #333;
+  background-color: #a2d5f2; /* Light pastel blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Rounded corners */
 }
 
 /* Navbar Logo */
@@ -16,6 +18,7 @@
 .navbar-links {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -26,44 +29,48 @@
 
 /* Links */
 .navbar-links a {
-  color: white;
+  color: #0e7490; /* Darker teal color for contrast */
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px; /* Maintains padding without changing font size */
-  border-radius: 4px; /* Rounded corners */
+  padding: 8px 12px;
+  border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
 }
 
-/* Login and Signup Button */
-.login-btn,
-.signup-btn {
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
+.navbar-links a svg {
+  margin-right: 8px; /* Spacing between icon and text */
+}
+.navbar-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
-.login-btn {
-  background-color: #555;
-  color: white;
-}
-
-.signup-btn {
-  background-color: #007bff;
-  color: white;
-  margin-left: 10px;
-}
 
 /* Hover Effect */
-.login-btn:hover,
-.signup-btn:hover,
 .navbar-links a:hover {
-  background-color: #444;
+  background-color: #7fc1d6; /* Slightly darker pastel blue */
+  color: white;
 }
 
 /* Active Link Styling */
 .navbar-links .active {
-  color:  rgb(253, 92, 213);
+  color: #0e7490;
   font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #0e7490;
 }
 
 /* Dropdown Styles */
@@ -74,7 +81,7 @@
 .dropdown-button {
   background: none;
   border: none;
-  color: white;
+  color: #0e7490;
   font-weight: bold;
   cursor: pointer;
 }
@@ -86,46 +93,49 @@
 /* Pop-out Dropdown Menu */
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Positions the dropdown just below the button */
+  top: 100%;
   right: 0;
   background-color: white;
   color: black;
   padding: 10px;
-  border-radius: 5px;
-  z-index: 999; /* Ensures dropdown appears on top of other elements */
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 200px;
+  z-index: 999;
 }
 
 /* Dropdown Links */
 .dropdown-menu a {
   display: block;
   padding: 8px;
-  color: black;
+  color: #0e7490;
   text-decoration: none;
-  font-weight: normal;
 }
 
 .dropdown-menu a:hover {
   background-color: #f1f1f1;
 }
 
-/* Ensures last link doesn't have extra margin */
-.dropdown-menu a:last-child {
-  margin-bottom: 0;
+/* Search Bar Styles */
+.search-bar {
+  width: 200px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-/* Red Background for testing */
-.red {
-  background: rgb(253, 92, 213);
-  color:  rgb(253, 92, 213);
-}
-.navbar-links a:hover {
-  background-color: #ff6b9a; /* Soft pink hover effect */
-  color: white; /* Ensures visibility on hover */
-}
-/* Active Link Styling */
-.navbar-links a.active {
-  color: #ff4d88; /* Pink color for active links */
-  font-weight: bold; /* Bold active link */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
 }

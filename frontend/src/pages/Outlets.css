@@ -8,11 +8,12 @@ body{
     overflow-x: hidden;
     color: #57111B;
 }
+
 .topimg img{
     width: 100vw;
     height: 70vh;
     object-fit:contain;
-    background-image: url('/public/outlet_assets/bg_outlet.jpg');
+    background-image: url('/public/outlet_assets/bg_class.jpg');
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
 }

@@ -1,0 +1,129 @@
+/* General Page Styling */
+.support-page {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  color: #004d62; /* Dark teal for text */
+  background-color: #e5f4f7; /* Soft light blue background */
+  border-radius: 12px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+section h1 {
+  font-size: 2rem;
+  color: #ff6b6b; /* Coral red for headings */
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+section p {
+  font-size: 1.1rem;
+  color: #004d62; /* Dark teal for text */
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Buttons Styling */
+section a.button-link {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section a.button-link:hover {
+  background-color: #d35400;
+}
+
+/* Image Carousel Styling */
+.carousel-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Links Styling */
+section a {
+  color: #3b9ca3; /* Sky blue for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+section a:hover {
+  color: #d35400; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+/* FAQ Section */
+.faq-section .faq-item {
+  margin-bottom: 20px;
+}
+
+/* Support Resources Section */
+.support-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.support-resources ul li {
+  margin-bottom: 10px;
+}
+
+.support-resources ul li a {
+  color: #3b9ca3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.support-resources ul li a:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-page {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  section {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  section h1 {
+    font-size: 1.6rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}

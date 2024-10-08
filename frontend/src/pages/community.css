@@ -1,0 +1,106 @@
+/* General Page Styling */
+.community-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1200px;
+  font-family: 'Roboto', sans-serif; /* A clean, modern font */
+  color: #004d62; /* Dark teal for text */
+}
+
+/* Join Our Community Section */
+.community-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #3b9ca3; /* Sky blue for header text */
+  font-weight: 700;
+}
+
+.community-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.community-item {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.community-item:hover {
+  transform: translateY(-10px);
+}
+
+.community-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  /* border-radius: 50%; Rounded images for a modern look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.community-item img:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.community-item p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #004d62; /* Dark teal for text */
+  font-weight: 500;
+}
+
+/* Upcoming Events Section */
+.events-section {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #bde6eb; /* Light blue background */
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.events-section h2 {
+  font-size: 2rem;
+  color: #ff6b6b; /* Coral red for headers */
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #004d62; /* Dark teal for text */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside Event Cards */
+.event-card a {
+  color: #3b9ca3; /* Sky blue for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.event-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .community-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

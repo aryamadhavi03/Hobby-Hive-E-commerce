@@ -6,34 +6,35 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import "./Home.css"
 import { NavLink } from "react-router-dom";
-import wax from '../assets/wax.png';
-import hair from '../assets/hair.png';
-import spa from '../assets/spa.png';
+import sports from '../assets/1.png';
+import cook from '../assets/6.png';
+import craft from '../assets/2.png';
+import music from '../assets/5.png';
 import img from '../assets/icon.png';
 
 
 
-import productImage from '../assets/product.png';
-import ladyImage from '../assets/lady.png';
+import productImage from '../assets/3.png';
+import ladyImage from '../assets/4.png';
 
 const ImageCarousel = () => {
     const slides = [
       {
         image: ladyImage,
-        title: 'X SALON',
+        title: 'HOBBY HIVE',
         subtitle: 'Welcome to',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        buttonText: 'Book Appointment',
+        buttonText: 'Buy Hobby Kits',
         link: '/appointment',  // Navigation link for this slide
       },
       {
         image: productImage,
-        title: 'X SALON',
+        title: 'HOBBY HIVE',
         subtitle: 'Welcome to',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        buttonText: 'Buy Products',
+        buttonText: 'Buy Hobby Kits',
         link: '/store',  // Navigation link for this slide
       },
     ];
@@ -84,20 +85,21 @@ const ImageCarousel = () => {
 
   const Services = () => {
     const services = [
-      { name: "Waxing", image: wax },
-      { name: "Hair Care", image: hair },
-      { name: "Hair Spa", image: spa },
+      { name: "Craft", image: craft },
+      { name: "Sports", image: sports },
+      { name: "Music", image: music },
+      { name: "Cooking", image: cook },
     ];
   
     return (
       <section id="services" className="services-section">
-        <h2>Try Our Best Services</h2>
+        <h2>Unleash Your Creativity with Premium Hobby Kits!</h2>
         <div className="services-container">
           {services.map((service, index) => (
             <div key={index} className="service-card">
               <img src={service.image} alt={service.name} />
               <h3>{service.name}</h3>
-              <button id="btn">Book Now</button>
+              <button id="btn">Buy Now</button>
             </div>
           ))}
         </div>
@@ -109,12 +111,12 @@ const VideoSection = () => {
     return (
       <section className="video-section">
         <div className="video-content">
-          <h2 className="video-title">Experience the Best in Makeup Artistry</h2>
+          <h2 className="video-title">Find a New Hobby</h2>
           <div className="video-container">
             <iframe
               width="100%"
               height="auto"
-              src="https://www.youtube.com/embed/-FnrCZJw6TE?si=7rucvFboiGjbatNq"
+              src="https://www.youtube.com/embed/yW3ORzaRXt8?si=LmqNS8HtIm0CuKaK"
               title="Makeup Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,214 +1,216 @@
 /* HomePage.css */
 .homepage {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(135deg, #ffd9ec 0%, #ff5ab2 100%);
-    color: white;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    background-color: white;
-    color: #ff69b4;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .cta-button:hover {
-    background-color: #f5f5f5;
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 50px;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  
-  .service-cards {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  .card h3 {
-    margin: 15px 0;
-  }
-  
-  .icon-placeholder {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #ff69b4;
-  }
-  
-  /* Different Icon Placeholders */
-  .haircut-icon {
-    background-color: #ff1493;
-  }
-  
-  .spa-icon {
-    background-color: #ff69b4;
-  }
-  
-  .facial-icon {
-    background-color: #ff1493;
-  }
-  
-  /* About Us Section */
-  .about-us {
-    display: flex;
-    padding: 50px;
-    background-color: #f7f7f7;
-    align-items: center;
-  }
-  
-  .about-content {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .about-placeholder {
-    flex: 1;
-    background-color: #ff69b4;
-    height: 300px;
-    border-radius: 10px;
-  }
+  font-family: 'Arial', sans-serif;
+}
 
-  .card-image {
-    width: 200px;
-  }
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #9FE2BF 0%, #40E0D0 100%);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-  .home-carousel {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-  }
-  
-  .home-carousel-slide {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Shift the content to the left */
-    transition: background-image 0.5s ease-in-out;
-  }
-  
-  .home-carousel-content {
-    text-align: left;
-    color: #fff;
-    padding: 40px;
-    max-width: 600px; /* Constrain the width of the content */
-  }
-  
-  .home-carousel-content h1 {
-    font-size: 6rem;
-    color: #ffcc99;
-    font-weight: bold;
-    padding-bottom: 50px;
-  }
-  
-  .home-carousel-content h3 {
-    font-size: 2rem;
-    color: #a03e3e;
-    margin-bottom: 20px;
-  }
-  
-  .home-carousel-content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #652525;
-    margin-bottom: 30px;
-    max-width: 600px;
-  }
-  
-  .home-carousel-btn {
-    background-color: #8b4513;
-    border: none;
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .home-carousel-btn:hover {
-    background-color: #a0522d;
-  }
-  
-  .home-carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .home-carousel-control.prev {
-    left: 10px;
-  }
-  
-  .home-carousel-control.next {
-    right: 10px;
-  }
-  
-  .home-carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #40E0D0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #E0FFFF;
+}
+
+/* Services Section */
+.services {
+  padding: 50px;
+  background-color: #E0F7FA;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #008080; /* Dark teal */
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.card h3 {
+  margin: 15px 0;
+  color: #008080; /* Dark teal */
+}
+
+.icon-placeholder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #40E0D0; /* Teal */
+}
+
+/* Different Icon Placeholders */
+.haircut-icon {
+  background-color: #20B2AA; /* Slightly darker teal */
+}
+
+.spa-icon {
+  background-color: #40E0D0; /* Teal */
+}
+
+.facial-icon {
+  background-color: #20B2AA; /* Slightly darker teal */
+}
+
+/* About Us Section */
+.about-us {
+  display: flex;
+  padding: 50px;
+  background-color: #E0F7FA; /* Light teal background */
+  align-items: center;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-placeholder {
+  flex: 1;
+  background-color: #40E0D0; /* Teal */
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card-image {
+  width: 200px;
+}
+
+/* Home Carousel */
+.home-carousel {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.home-carousel-slide {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.home-carousel-content {
+  text-align: left;
+  color: #fff;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.home-carousel-content h1 {
+  font-size: 6rem;
+  color: #E0FFFF; /* Light turquoise */
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.home-carousel-content h3 {
+  font-size: 2rem;
+  color: #008080; /* Dark teal */
+  margin-bottom: 20px;
+}
+
+.home-carousel-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #006666; /* Darker teal */
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.home-carousel-btn {
+  background-color: #20B2AA; /* Dark teal */
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.home-carousel-btn:hover {
+  background-color: #008080; /* Darker teal */
+}
+
+.home-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-carousel-control.prev {
+  left: 10px;
+}
+
+.home-carousel-control.next {
+  right: 10px;
+}
+
+.home-carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Services Section Styling */
 .services-section {
-  background-color: #f9f9f9;
+  background-color: #E0F7FA;
   background-image: url(./assets/servicebg.png);
   background-repeat: no-repeat;
-  background-size: cover;      /* Ensures the image covers the entire container */
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   padding: 50px 20px;
   text-align: center;
   display: flex;
@@ -221,14 +223,14 @@
 .services-section h2 {
   font-size: 2.5rem;
   margin-bottom: 100px;
-  color: #a03e3e; 
+  color: #008080; /* Dark teal */
   font-family: 'Poppins', sans-serif;
 }
 
 .services-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adjust gap between cards */
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -256,38 +258,41 @@
 .service-card h3 {
   font-size: 1.5rem;
   margin-top: 15px;
-  color: #555;
+  color: #008080; /* Dark teal */
   font-family: 'Poppins', sans-serif;
 }
+
 #btn {
-  background-color: #8b4513;    /* Rich brown color for the button */
+  background-color: #20B2AA; /* Dark teal */
   border: none;
-  color: #fff;                  /* White text */
-  padding: 12px 25px;           /* Add padding for a better button size */
-  font-size: 1.2rem;            /* Larger text for the button */
-  border-radius: 30px;          /* Rounded button corners */
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease;  /* Smooth hover transition */
+  transition: background-color 0.3s ease;
 }
 
 #btn:hover {
-  background-color: #a0522d;    /* Slightly lighter brown on hover */
+  background-color: #008080; /* Dark teal */
 }
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .services-container {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   .service-card {
-    width: 80%;
+      width: 80%;
   }
 }
 
+/* Video Section */
 .video-section {
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #E0F7FA;
   text-align: center;
 }
 
@@ -298,14 +303,14 @@
 
 .video-title {
   font-size: 1.5rem;
-  color: #a03e3e; 
+  color: #008080; /* Dark teal */
   margin-bottom: 1rem;
   font-family: 'Arial', sans-serif;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
@@ -318,9 +323,9 @@
   height: 100%;
 }
 
-/* Testimonials Section Styling */
+/* Testimonials Section */
 .testimonials-section {
-  background-color: #fcebeb;
+  background-color: #E0FFFF; /* Light turquoise */
   padding: 50px 20px;
   text-align: center;
 }
@@ -328,20 +333,19 @@
 .testimonials-section h2 {
   font-size: 3rem;
   margin-bottom: 50px;
-  color: #6c3924;
+  color: #008080; /* Dark teal */
   font-family: 'Poppins', sans-serif;
 }
 
 .testimonials-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Adjust gap between cards */
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-/* Testimonial Card Styling */
 .testimonial-card {
-  background: linear-gradient(to bottom, #fff, #f7d5d8);
+  background: linear-gradient(to bottom, #fff, #9FE2BF); /* Light turquoise gradient */
   border-radius: 12px;
   padding: 20px;
   width: 280px;
@@ -353,49 +357,5 @@
 .testimonial-card:hover {
   transform: translateY(-10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Profile Image */
-.testimonial-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  object-fit: cover; /* Ensure the image covers the area and retains its proportions */
-  background-color: #ccc; /* Fallback background color in case the image doesn't load */
-}
-
-.testimonial-card p {
-  font-size: 1rem;
-  color: #333;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 30px;
-}
-
-.testimonial-card h3 {
-  font-size: 1.2rem;
-  color: #6c3924;
-  font-family: 'Poppins', sans-serif;
-  background-color: #6c3924;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 150px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .testimonials-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial-card {
-    width: 80%;
-  }
+  box-shadow: 0 8px 20px rgba(0, 0, 0,)
 }

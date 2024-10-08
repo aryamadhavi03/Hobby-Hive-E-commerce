@@ -4,12 +4,14 @@ import './App.css';
 import LoginForm from './pages/LoginForm';
 import SignupForm from './pages/SignupForm';
 import Outlets from './pages/Outlets';
-import Services from './pages/Services';
+
 import Home from './pages/Home';
 import RefrshHandler from './RefrshHandler';
 import OnlineStore from './pages/Onlinestore';
 import AppointmentForm from './pages/AppointmentForm';
 import MyAppointments from './pages/MyAppointments';
+import CommunityPage from './pages/community';
+import CustomerSupportPage from './pages/CustomerSupportPage';
 
 
 function App() {
@@ -26,12 +28,13 @@ function App() {
         <Route path='/' element={<Navigate to="/home" />} />
         <Route path='/login' element={<LoginForm />} />
         <Route path='/signup' element={<SignupForm />} />
-        <Route path='/outlets' element={<Outlets />} />
-        <Route path='/services' element={<Services />} />
+        <Route path='/location' element={<Outlets />} />
+        <Route path='/cutomersupport' element={<CustomerSupportPage />} />
         <Route path='/home' element={<Home />} />
         <Route path='/appointment' element={<AppointmentForm/>} />
         <Route path='/myappointments' element={<MyAppointments/>} />
-        <Route path='/store' element={<OnlineStore />} />
+        <Route path='/communitypage' element={<CommunityPage/>} />
+        <Route path='/shop' element={<CommunityPage/>} />
         {/* <Route path='/home' element={<PrivateRoute element={<Home />} />} /> */}
       </Routes>
 

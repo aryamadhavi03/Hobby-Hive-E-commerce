@@ -5,70 +5,60 @@ import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 
 const Outlets = () => {
-    const [mapSrc, setMapSrc] = useState("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120556.01377007818!2d72.85082642655325!3d19.22246313631774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9666160a75b%3A0x105a5333c2a95751!2sLakme%20Salon!5e0!3m2!1sen!2sin!4v1722692297203!5m2!1sen!2sin");
-    const [address, setAddress] = useState("High School, Shop No. 1 & 2, Siddhachal Building No. 3 Phase 8, Pokharan Rd Number 2, opposite Vasant Vihar, Vasant Vihar, Thane West, Mumbai, Maharashtra 400610");
-    const [mapTitle, setMapTitle] = useState("Thane");
+    const [mapSrc, setMapSrc] = useState("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241256.85087786085!2d72.71076122643161!3d19.123517495601366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f02fdd817f%3A0xe8cb6e1010d2fb49!2sCulinary%20Craft%20%7C%20Best%20Cooking%20Classes%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1728321758226!5m2!1sen!2sin");
+    // const [address, setAddress] = useState("High School, Shop No. 1 & 2, Siddhachal Building No. 3 Phase 8, Pokharan Rd Number 2, opposite Vasant Vihar, Vasant Vihar, Thane West, Mumbai, Maharashtra 400610");
+    const [mapTitle, setMapTitle] = useState("Powai");
 
       
 
     const stores = [
         {
-          name: 'Viviana Mall',
-          address: 'High School, Shop No. 1 & 2, Siddhachal Building No. 3 Phase 8,Vasant Vihar, Thane West, Mumbai,400610',
+          name: 'Culinary Craft',
+          address: '247/248, Second Floor, Powai Plaza, Hiranandani Gardens, Sainath Nagar, Powai, Mumbai, Maharashtra 400076',
           phone: '18001231555',
           openUntil: '09:30 PM',
           mapLink: '#', // Link to the map location
           websiteLink: '#', // Link to the store's website
           shopLink: '#', // Link to the shop
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120556.01377007818!2d72.85082642655325!3d19.22246313631774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9666160a75b%3A0x105a5333c2a95751!2sLakme%20Salon!5e0!3m2!1sen!2sin!4v1722692297203!5m2!1sen!2sin",
-          city: "Thane",
+          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241256.85087786085!2d72.71076122643161!3d19.123517495601366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f02fdd817f%3A0xe8cb6e1010d2fb49!2sCulinary%20Craft%20%7C%20Best%20Cooking%20Classes%20in%20Mumbai!5e0!3m2!1sen!2sin!4v1728321758226!5m2!1sen!2sin",
+          city: "Powai",
         },
 
         {
-          name: 'Mumbai Mall',
-          address: 'No A28/1, Inorbit Mall, Block No 1406, Link Road, Malad West, Mumbai - 400064',
+          name: 'The Oricra Art Studio',
+          address: '13b4, sindhi colony, Rd Number 24, Sion West, Mumbai, Maharashtra 400022',
           phone: '18001231555',
           openUntil: '09:30 PM',
           mapLink: '#', // Link to the map location
           websiteLink: '#', // Link to the store's website
           shopLink: '#', // Link to the shop
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148524.3640880721!2d72.7538906570983!3d19.108643498659866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b51222092f%3A0x89cb958615e528e9!2sLakme%20Salon!5e0!3m2!1sen!2sin!4v1722692367401!5m2!1sen!2sin",
+          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120687.88762950688!2d72.76460608926203!3d19.0418964523656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c948f112a235%3A0x495d733ffd6b949a!2sThe%20Oricra%20Art%20Studio!5e0!3m2!1sen!2sin!4v1728322223447!5m2!1sen!2sin",
           city: "Mumbai",    
 
         },
         {
-          name: 'Kalyan Mall',
-          address: 'No A28/1, Inorbit Mall, Block No 1406, Link Road, Malad West, Mumbai - 400064',
+          name: 'Emma Sports Academy',
+          address: 'Plot no. 103, behind Hiranandani Hospital Road, Hariom Nagar, Ramabai Ambedkar Nagar, Powai, Mumbai, Maharashtra 400076',
           phone: '18001231555',
           openUntil: '09:30 PM',
           mapLink: '#', // Link to the map location
           websiteLink: '#', // Link to the store's website
           shopLink: '#', // Link to the shop
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220273.46615733232!2d72.85684923548233!3d19.173933744560237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79517705f74a9%3A0x1b772e028156ba4a!2sLakme%20Salon!5e0!3m2!1sen!2sin!4v1722692426326!5m2!1sen!2sin",
-          city: "Kalyan",
-        },
-        {
-          name: 'Hill Road Bandra',
-          address: '101, C/5, First floor, Libra towers,,Opp. St. Peters Church, Hill Road,Mumbai,400050 Phone Number: 8655680153,2226430417',
-          phone: '18001231555',
-          openUntil: '09:30 PM',
-          mapLink: '#', // Link to the map location
-          websiteLink: '#', // Link to the store's website
-          shopLink: '#', // Link to the shop
-          scr: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3771.1948228468655!2d72.82737707520485!3d19.055169982145063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAzJzE4LjYiTiA3MsKwNDknNDcuOCJF!5e0!3m2!1sen!2sin!4v1726225758301!5m2!1sen!2sin",
-          city: "Mumbai",    
-        },
-        {
-          name: 'Shivaji Park',
-          address: 'Shop No.3,Shiv Kutir,,Mumbai,400028',
-          phone: '8097433945',
-          openUntil: '09:30 PM',
-          mapLink: '#', // Link to the map location
-          websiteLink: '#', // Link to the store's website
-          shopLink: '#', // Link to the shop
-          scr: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3771.822476668948!2d72.83594097520414!3d19.027542682167073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAxJzM5LjIiTiA3MsKwNTAnMTguNyJF!5e0!3m2!1sen!2sin!4v1726225969806!5m2!1sen!2sin",
+          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121527.54269737074!2d72.76359816463003!3d19.041616112488704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7260b287043%3A0xf09f4c77ca48b791!2sEmma%20Sports%20Academy!5e0!3m2!1sen!2sin!4v1728322431637!5m2!1sen!2sin",
           city: "Mumbai",
         },
+        {
+          name: 'Rhythm Music Hall',
+          address: 'Road No 13, Chembur West, Tilak Nagar, Chembur, Mumbai, Maharashtra 400089',
+          phone: '18001231555',
+          openUntil: '09:30 PM',
+          mapLink: '#', // Link to the map location
+          websiteLink: '#', // Link to the store's website
+          shopLink: '#', // Link to the shop
+          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15083.37661735893!2d72.8785546395508!3d19.07058850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9dd42db3ead%3A0x13e9f186ed2b3e6e!2sRhythm%20Music%20Hall!5e0!3m2!1sen!2sin!4v1728386047837!5m2!1sen!2sin" ,
+          city: "Chembur",
+        },
+       
         // Add more stores here if needed
         
       ];
@@ -98,10 +88,10 @@ const Outlets = () => {
         <main>
                <Navbar handleLogout={handleLogout} />
             <div className="topimg">
-                <img src="/outlet_assets/bg_outlet.png" alt="" />
+                <img src="/outlet_assets/bg_class.png" alt="" />
             </div>
 
-            <h1>Our Available Outlets</h1>
+            <h1>Our Collaborations</h1>
             <div className="outletmap">
                 <div className="map">
                     <div className="mapT"><h2>{mapTitle}</h2></div>
@@ -131,7 +121,7 @@ const Outlets = () => {
                     {stores.map((store, index) => (
                         <div key={index} className="store-card">
                         <div className="store-header">
-                            <h3>💈 Salon Stores</h3>
+                            <h3>💈 Collaboration with Classes</h3>
                         </div>
                         <div className="store-info">
                             <h4>{store.name}</h4>
@@ -157,7 +147,7 @@ const Outlets = () => {
 
 
 
-            <div className="ownoutlet">
+            {/* <div className="ownoutlet">
                 <div className="text">
                     <h1>Wanna own an outlet?</h1>
                     Checkout here
@@ -181,8 +171,8 @@ const Outlets = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Footer></Footer>
+            </div> */}
+            {/* <Footer></Footer> */}
         </main>
     );
 };
