@@ -12,6 +12,7 @@ import AppointmentForm from './pages/AppointmentForm';
 import MyAppointments from './pages/MyAppointments';
 import CommunityPage from './pages/community';
 import CustomerSupportPage from './pages/CustomerSupportPage';
+import Shop from './pages/Shop';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <Route path='/appointment' element={<AppointmentForm/>} />
         <Route path='/myappointments' element={<MyAppointments/>} />
         <Route path='/communitypage' element={<CommunityPage/>} />
-        <Route path='/shop' element={<CommunityPage/>} />
+        <Route path='/shop' element={<Shop/>} />
         {/* <Route path='/home' element={<PrivateRoute element={<Home />} />} /> */}
       </Routes>
 

@@ -4,8 +4,8 @@ import { handleError, handleSuccess } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import "./Home.css"
 import { NavLink } from "react-router-dom";
+import "./Home.css"
 import sports from '../assets/1.png';
 import cook from '../assets/6.png';
 import craft from '../assets/2.png';
@@ -26,7 +26,7 @@ const ImageCarousel = () => {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         buttonText: 'Buy Hobby Kits',
-        link: '/appointment',  // Navigation link for this slide
+        link: '/shop',  // Navigation link for this slide
       },
       {
         image: productImage,
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         buttonText: 'Buy Hobby Kits',
-        link: '/store',  // Navigation link for this slide
+        link: '/shop',  // Navigation link for this slide
       },
     ];
   
@@ -132,9 +132,9 @@ const VideoSection = () => {
 const Testimonials = () => {
     const testimonials = [
       { name: "Arya", 
-        text: "The staff is friendly, warm, and cooperative. They greet me with happy faces all the time. No matter which eyebrow threader I choose, I get the same shape every time with the utmost perfection. Love this place and its atmosphere.", image: img },
-      { name: "Sharvari", text: "Amy did my lash extensions with utter accuracy and perfection. She even gives a guarantee that if you don’t like your lashes, she’ll refund your money. Her skill level matches her confidence level!",  image: img },
-      { name: "Artha", text: "I had a facial treatment with Riya, and it was beyond amazing. She took the time to explain every step and tailored the treatment to my skin's needs. I left feeling rejuvenated and with glowing skin. ",  image: img },
+        text: "I recently joined Hobby Hive, and the experience has been fantastic. The platform offers a wide range of hobbies to explore, and everything is so easy to navigate. The community is welcoming, and I love how I can connect with others who share my interests. It's a great way to learn new skills while having fun!", image: img },
+      { name: "Sharvari", text: "I recently joined Hobby Hive, and the experience has been fantastic. The platform offers a wide range of hobbies to explore, and everything is so easy to navigate. The community is welcoming, and I love how I can connect with others who share my interests. It's a great way to learn new skills while having fun!",  image: img },
+      { name: "Artha", text: "I recently joined Hobby Hive, and the experience has been fantastic. The platform offers a wide range of hobbies to explore, and everything is so easy to navigate. The community is welcoming, and I love how I can connect with others who share my interests. It's a great way to learn new skills while having fun!",  image: img },
     ];
   
     return (

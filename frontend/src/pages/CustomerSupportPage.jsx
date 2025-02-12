@@ -1,8 +1,26 @@
 import React from 'react';
 import './customerSupport.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const CustomerSupportPage = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = (e) => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('loggedInUser');
+    localStorage.removeItem('loggedInEmail');
+    handleSuccess('User Logged out');
+    setTimeout(() => {
+      navigate('/home');
+    }, 2000);
+  }
   return (
+    <>
+     <Navbar handleLogout={handleLogout} />
     <div className="support-page">
       {/* About Us Section */}
       <section className="refund-policy">
@@ -27,7 +45,7 @@ const CustomerSupportPage = () => {
         <h1>Contact Us</h1>
         <p>
           Need help or have a question? </p><p>Reach out to our support team </p> 
-          <p>Email: <a href="mailto:support@ourcompany.com"> support@ourcompany.com</a></p>
+          <p>Email: <a href="mailto:support@ourcompany.com"> hobbyhive@gmail.com</a></p>
           <p>Contact : (123) 456-7890.</p>
           <p> We are available Monday to Friday from 9 AM to 6 PM.</p>
         {/* <button>Contact Support</button> */}
@@ -64,6 +82,8 @@ const CustomerSupportPage = () => {
         </ul>
       </section>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

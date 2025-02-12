@@ -27,7 +27,7 @@ const Footer = () => {
               <span>Phone:</span> 9988776655
             </div>
             <div className="hobbyhive-email">
-              <span>Email:</span> example.com@gmail.com
+              <span>Email:</span> hobbyhive@gmail.com
             </div>
           </div>
         </div>

@@ -2,11 +2,26 @@
 
 import React from 'react';
 import './community.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 // import Qr from '../assets/images/qr.png';
 
 const CommunityPage = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = (e) => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('loggedInUser');
+    localStorage.removeItem('loggedInEmail');
+    handleSuccess('User Logged out');
+    setTimeout(() => {
+      navigate('/home');
+    }, 2000);
+  }
   return (
-   
+   <>
+    <Navbar handleLogout={handleLogout} />
     <div className="community-container">
       {/* Join Our Community Section */}
       <div className="community-header">
@@ -48,6 +63,8 @@ const CommunityPage = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
